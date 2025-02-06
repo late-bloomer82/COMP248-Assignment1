@@ -3,6 +3,10 @@
 // Written by: Ahmad-Radjai Cherifi, 40327926
 // For COMP 248 Section U – Winter 2025
 // --------------------------------------------------------------------
+// The Simple Talisman-Land Access Program prompts the user to enter a 3 digit integer code between 000 and 999. The program assumes valid input and based on the code entered,
+// it computes and displays a sequence of three buttons to press to gain access to Talisman Land. The program ends after displaying a closing
+// message to the user.
+
 import java.util.Scanner;
 
 public class A1_Q1 {
