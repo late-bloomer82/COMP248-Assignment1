@@ -19,19 +19,24 @@ public class A1_Q1 {
         // Prompt user for a specific number
         System.out.print("Enter a code as an integer between 1 and 100 (inclusive): ");
 
-        // Create scanner object to read user input later
+        // Create scanner object to read user input
         Scanner scanner = new Scanner(System.in);
 
-        //Read user input using a nextLine
-        String firstCode = scanner.nextLine();
+        // Read user input using nextInt
+        int code = scanner.nextInt();
+
+        // Compute and store inside variables the 3 digits from the code entered
+        int firstButton = (code / 100) % 10;
+        int secondButton = (code / 10) % 10;
+        int thirdButton = code % 10;
 
         // Add a blank line for clarity
         System.out.println();
 
-        // Compute the 3 buttons that should be pressed using charAt
-        System.out.println("The first button to press is " + firstCode.charAt(0));
-        System.out.println("The second button to press is " + firstCode.charAt(1));
-        System.out.println("The third button to press is " + firstCode.charAt(2));
+        // Print the 3 buttons to be pressed
+        System.out.println("\t\tThe first button to press is " + firstButton);
+        System.out.println("\t\tThe second button to press is " + secondButton);
+        System.out.println("\t\tThe third button to press is " + thirdButton);
 
         // Add a blank line for clarity
         System.out.println();
