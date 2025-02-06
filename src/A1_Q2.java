@@ -3,6 +3,10 @@
 // Written by: Ahmad-Radjai Cherifi, 40327926
 // For COMP 248 Section U – Winter 2025
 // --------------------------------------------------------------------
+// The Simple Concordia Ready-to-Eat Meals Invoice Program prompts the user to input a number of details, such as the payment method, funds available, number of meals
+// to purchase and date of purchase. Using this information, it calculates how many meals can be bought and the balance left on the gift card after purchase.
+// The program then generates an invoice for the purchase with the relevant information and then prints a closing message for the user.
+
 import java.util.Scanner;
 
 public class A1_Q2 {
@@ -117,5 +121,8 @@ public class A1_Q2 {
 
         // Print closing message
         System.out.println("Thank you for using my bespoke Concordia Ready-to-Eat Meals Invoice Program!");
+
+        // Close scanner for resource optimization
+        scanner.close();
     }
 }
